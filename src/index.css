@@ -1,13 +1,360 @@
 body {
+  background-image: url("./images/bg-texture.jpg");
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  color: #333;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Merriweather', serif;
+  font-size: 1em;
+  line-height: 1.4em;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.25em;
+}
+
+a[href^=tel] {
+  color: #00a3d9;
+}
+
+header {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header .logo {
+  width: 140px;
+}
+
+@media (max-width: 740px) {
+  header .logo {
+    width: 50px;
+    display: block;
+    float: none;
+  }
+}
+
+header .masthead {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+header .masthead:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 740px) {
+  header .masthead {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 220px;
+  }
+}
+
+header .masthead .business-card .name {
+  margin-top: 55px;
+}
+
+@media (max-width: 740px) {
+  header .masthead .business-card .name {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 740px) {
+  header .masthead .business-card {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+}
+
+header .masthead .phone-numbers {
+  font-size: 0.8125em;
+  text-align: right;
+  color: #666;
+}
+
+@media (max-width: 740px) {
+  header .masthead .phone-numbers {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+}
+
+header .masthead .phone-numbers .office-phone {
+  margin-top: 70px;
+}
+
+@media (max-width: 740px) {
+  header .masthead .phone-numbers .office-phone {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    float: none;
+  }
+}
+
+.content {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: -35px;
+  background-color: white;
+  text-align: left;
+  border: 1px solid #e9e9e9;
+}
+
+.content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 740px) {
+  .content {
+    margin-top: 0px;
+  }
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.business-card .name {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.25em;
+}
+
+.business-card .title {
+  color: #00a3d9;
+  margin-top: 15px;
+}
+
+.business-card.small .name {
+  font-size: 1.5em;
+}
+
+.business-card.small .title {
+  margin-top: 10px;
+}
+
+@media (max-width: 740px) {
+  .business-card {
+    line-height: 2.4em;
+  }
+}
+
+section {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+section .person {
+  display: block;
+  padding-top: 40px;
+}
+
+section .person:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+section .person img {
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 2px 0px;
+  padding: 5px;
+  width: 175px;
+  float: left;
+}
+
+@media (max-width: 740px) {
+  section .person img {
+    margin-bottom: 5px;
+  }
+}
+
+section .person img.small {
+  width: 100px;
+}
+
+section .person .bio {
+  margin-left: 5%;
+  float: left;
+  width: 66%;
+}
+
+@media (max-width: 740px) {
+  section .person .bio {
+    width: 100%;
+  }
+}
+
+section .person .bio.without-business-card p:first-child {
+  margin-top: 0;
+}
+
+section.map {
+  width: 100%;
+  padding: 0;
+  position: relative;
+}
+
+section.map:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 740px) {
+  section.map {
+    padding-left: 50px;
+    padding-right: 50px;
+    width: auto;
+  }
+}
+
+section.map .map-image {
+  background-image: url("./images/map.jpg");
+  background-position: center;
+  height: 245px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -webkit-filter: grayscale(1);
+  transition: 0.5s all;
+}
+
+section.map .map-image:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -webkit-filter: grayscale(0);
+  cursor: pointer;
+}
+
+@media (max-width: 740px) {
+  section.map .map-image {
+    display: none;
+  }
+}
+
+section.map .contact-us {
+  background-color: rgba(1, 23, 30, 0.9);
+  float: left;
+  height: 100%;
+  color: white;
+  width: 300px;
+  position: absolute;
+  top: 0;
+  left: 50px;
+  font-size: 0.9em;
+}
+
+@media (max-width: 740px) {
+  section.map .contact-us {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: auto;
+  }
+}
+
+@media (max-width: 399px) {
+  section.map .contact-us {
+    width: 220px;
+  }
+}
+
+section.map .contact-us h2 {
+  font-family: 'Playfair Display', serif;
+  margin: 20px 0px 20px 25px;
+  font-size: 2em;
+}
+
+section.map .contact-us .address {
+  margin-left: 25px;
+}
+
+section.map .contact-us .phone-numbers {
+  margin-top: 15px;
+  margin-left: 25px;
+}
+
+section.map .contact-us .phone-numbers span {
+  display: inline-block;
+}
+
+section.map .contact-us .phone-numbers .phone-number-label {
+  width: 3.5em;
+}
+
+section.practice-areas {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 740px) {
+  section.practice-areas {
+    margin-top: 10px;
+    line-height: 2.25em;
+  }
+}
+
+section.practice-areas .practice {
+  width: 66%;
+  line-height: 1.6em;
+}
+
+@media (max-width: 740px) {
+  section.practice-areas .practice {
+    width: 100%;
+  }
+}
+
+section.practice-areas .practice .title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5em;
+  padding: 30px 0 10px 0;
+}
+
+@media (max-width: 740px) {
+  section.practice-areas .practice .title {
+    padding: 0;
+  }
+}
+
+section.practice-areas .practice .sub-practices {
+  color: #00a3d9;
+}
+
+section.practice-areas .practice .description {
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  color: #666;
+  margin-left: 20px;
+  padding-left: 30px;
+  border-left: 1px solid #00a3d9;
+}
+
+footer {
+  height: 100px;
 }
